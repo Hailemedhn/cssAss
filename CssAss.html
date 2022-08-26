@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Assigment</title>
+    <style>
+      body {
+        background-image: url("image1.jpg");
+        background-repeat: no-repeat;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      .width {
+        width: 800px;
+      }
+      #continent {
+        width: 800px;
+      }
+      label {
+        font-weight: bold;
+      }
+      div {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: 0px 350px;
+        border-radius: 10px;
+      }
+      p {
+        margin-top: -10px;
+      }
+      .leftfloat {
+        float: left;
+        margin-left: 40px;
+      }
+      .fontsize {
+        font-size: 20px;
+      }
+      button {
+        width: 500px;
+        height: 50px;
+        font-size: 30px;
+        background-color: darkgreen;
+        border: none;
+      }
+      button:hover {
+        background-color: rgb(62, 231, 62);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Tree Survey Form</h1>
+      <p>A survey form on the health of the environment</p>
+      <form action="/this.com">
+        <label for="name" class="leftfloat">Name: </label>
+        <br />
+        <br />
+        <input
+          class="width"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name eg. John Doe"
+          required
+        />
+        <br />
+        <br />
+        <label for="email" class="leftfloat">Email: </label>
+        <br />
+        <br />
+        <input
+          class="width"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="xyz@someplace.com"
+          required
+        />
+        <br />
+        <br />
+        <label for="age" class="leftfloat">Age(Optional): </label>
+        <br />
+        <br />
+        <input
+          type="number"
+          id="age"
+          name="age"
+          placeholder="10"
+          class="width"
+        />
+        <br />
+        <br />
+        <label for="continent">Selct continent of residence</label>
+        <br /><br />
+        <select name="continent" id="continent">
+          <option value="africa">Africa</option>
+          <option value="namerica">North America</option>
+          <option value="samerica">South America</option>
+          <option value="asia">Asia</option>
+          <option value="europe">Europe</option>
+          <option value="australia">Australia</option>
+        </select>
+        <br />
+        <br />
+        <h2>Choose your prefered gender</h2>
+        <br />
+        <br />
+
+        <input
+          type="radio"
+          id="male"
+          name="sex"
+          checked
+          value="male"
+          class="leftfloat"
+        />
+        <label for="male" class="leftfloat fontsize">Male</label
+        ><br /><br /><br />
+        <input
+          type="radio"
+          id="female"
+          name="sex"
+          value="female"
+          class="leftfloat"
+        />
+        <label for="female" class="leftfloat fontsize">Female </label>
+        <br /><br /><br />
+
+        <h2>Please select one of the options below:</h2>
+
+        <br />
+        <br />
+        <input
+          type="checkbox"
+          name="planted"
+          id="planted"
+          value="planted"
+          class="leftfloat"
+        />
+        <label for="planted" class="leftfloat"
+          >I have planted a tree or any other plant</label
+        >
+        <br />
+        <br />
+        <input
+          type="checkbox"
+          name="takepart"
+          id="takepart"
+          value="takepart"
+          class="leftfloat"
+        />
+        <label for="takepart" class="leftfloat"
+          >I take part in community service for the environment</label
+        >
+        <br />
+        <br />
+        <input
+          type="checkbox"
+          name="promise"
+          id="promise"
+          value="promise"
+          class="leftfloat"
+        />
+        <label for="promise" class="leftfloat"
+          >I promise to plant more from now on</label
+        >
+        <br />
+        <br />
+        <h2>Any comment or suggestions</h2>
+        <textarea name="comment" id="comment" cols="100" rows="10">
+ Comments/Suggestions</textarea
+        >
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
